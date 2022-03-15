@@ -7,7 +7,7 @@ searchBox.oninput = () =>{
 
     images.forEach(hide => hide.style.display = 'none');
 
-    let value = searchBox.value;
+    let value = searchBox.value.toLowerCase();
     
     images.forEach(filter =>{
         let title = filter.getAttribute('data-title');
